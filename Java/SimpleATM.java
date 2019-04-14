@@ -37,7 +37,7 @@ public class SimpleATM {
         System.out.println(salam+"\n");
         System.out.println(info0);
         String pilihan;
-        while(loop==true){
+        while(loop){
             pilihan = input.next();
             switch(pilihan){
                 case ("D"):
