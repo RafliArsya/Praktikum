@@ -36,7 +36,7 @@ public class SimpleATM {
         Scanner input = new Scanner(System.in);
         System.out.println(salam+"\n");
         System.out.println(info0);
-        String pilihan="E";
+        String pilihan;
         while(loop==true){
             pilihan = input.next();
             switch(pilihan){
