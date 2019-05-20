@@ -1,0 +1,13 @@
+C:\Users\RedLeo\source\repos\BankOM\BankOM\bin\Debug\BankOM.exe.config
+C:\Users\RedLeo\source\repos\BankOM\BankOM\bin\Debug\BankOM.exe
+C:\Users\RedLeo\source\repos\BankOM\BankOM\bin\Debug\BankOM.pdb
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.csprojAssemblyReference.cache
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.Form1.resources
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.Option.resources
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.Properties.Resources.resources
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.csproj.GenerateResource.cache
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.csproj.CoreCompileInputs.cache
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.exe
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.pdb
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.Register.resources
+C:\Users\RedLeo\source\repos\BankOM\BankOM\obj\Debug\BankOM.Deposit_Form.resources
