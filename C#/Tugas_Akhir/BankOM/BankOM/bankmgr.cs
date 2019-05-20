@@ -9,9 +9,6 @@ namespace BankOM
     class bankmgr
     {
         public static List<bankmgr> UserList = new List<bankmgr>();
-        //public static bankmgr[] account = new bankmgr[8];
-        /*public int num_acc = 8;
-        public bankmgr[] account = new bankmgr[num_acc];*/
         public static void ListToArray(string[] array)
         {
             Console.WriteLine("Array received: " + array.Length);
@@ -70,27 +67,14 @@ namespace BankOM
         {
             double current = _balance();
             double now = current + arga;
-            //tinfo(1);
             return now;
         }
         public void _deposit(double amount=0)
         {
-           /* Console.WriteLine("Amount to Deposit?");
-            double amount;
-            while (!double.TryParse(Console.ReadLine(), out amount))
-            {
-                Console.WriteLine("Wrong input!");
-            }*/
             this.balance = this.deposit(amount);
         }
         public void _withdraw(double amount = 0)
         {
-            /*Console.WriteLine("Amount to Withdraw ?");
-            double amount;
-            while (!double.TryParse(Console.ReadLine(), out amount))
-            {
-                Console.WriteLine("Wrong input!");
-            }*/
             this.balance = this.withdraw(amount);
         }
         public double withdraw(double arga)
@@ -99,16 +83,11 @@ namespace BankOM
             double temp = current - arga;
             if (temp < 0)
             {
-                //tinfo(2);
                 return current;
             }
             tinfo(1);
             return temp;
         }
-        /*public void check()
-        {
-            Console.WriteLine("Your current balance is {0}", this._balance());
-        }*/
         public void tinfo(int arga)
         {
             switch (arga)
