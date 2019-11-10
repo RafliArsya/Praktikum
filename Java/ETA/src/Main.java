@@ -161,6 +161,7 @@ public class Main {
 					comboBox_1.setBounds(175, 96, 79, 20);
 					comboBox_2.setBounds(175, 55, 79, 20);
 					lblLabelhasil.show();
+					textField_2.setText(null);
 				}else if(comboBox.getSelectedIndex() == 1) {
 					lblLabelb.setText("Waktu");
 					lblLabelc.setText("Jarak");
@@ -170,6 +171,7 @@ public class Main {
 					comboBox_1.setBounds(265, 170, 79, 20);
 					comboBox_2.setBounds(175, 96, 79, 20);
 					lblLabelhasil.hide();
+					textField_2.setText(null);
 				}else {
 					lblLabelc.setText("Waktu");
 					lblLabela.setText("Jarak");
@@ -179,6 +181,7 @@ public class Main {
 					comboBox_1.setBounds(175, 55, 79, 20);
 					comboBox_2.setBounds(265, 170, 79, 20);
 					lblLabelhasil.hide();
+					textField_2.setText(null);
 				}
 			}
 		});
@@ -198,9 +201,10 @@ public class Main {
 				String text_b = textField_1.getText().toString();
 				Double a = Double.parseDouble(text_a);
 				Double b = Double.parseDouble(text_b);
-				double c = 0;
+				double c=0;
+				String hasil;
 				switch(sel) {
-				case 0 :
+				case 0 :{
 					 if(comboBox_2.getSelectedIndex() == 0) {
 						 a /= 3600;
 					 }else if(comboBox_2.getSelectedIndex() == 1) {
@@ -219,13 +223,51 @@ public class Main {
 						 c/=1.609344;
 					 }
 					 //String text_c = String.valueOf(c);
-					 String hasil = String.format("%.2f", c);
+					 hasil = String.format("%.2f", c);
 					 textField_2.setText(hasil);
 					 break;
-				case 1 :
-					
-				case 2 :
-					
+				}
+				case 1 :{
+					if(rdbtnRadioa.isSelected()) {
+						 a/=3.6;
+					} 
+					if(rdbtnRadiob.isSelected()) {
+						 a/=2.237;
+					}
+					if(comboBox_2.getSelectedIndex() == 0) {
+						 //do nothing
+					}else if(comboBox_2.getSelectedIndex() == 1) {
+						 b *= 60;
+					}else {
+						 b *= 3600;
+					}
+					c = a*b;
+					if(comboBox_1.getSelectedIndex() == 1) {
+						c /= 1000;
+					}
+					hasil = String.format("%.2f", c);
+					textField_2.setText(hasil);
+					break;
+				}
+				case 2 :{
+					if(comboBox_1.getSelectedIndex() == 0) {
+						a /= 1000;
+					}
+					if(rdbtnRadiob.isSelected()) {
+						b/=1.609344;
+					}
+					c=a/b;
+					if(comboBox_2.getSelectedIndex() == 0) {
+						 c *= 3600;
+					}else if(comboBox_2.getSelectedIndex() == 1) {
+						 c *= 60;
+					}else {
+						 //do nothing
+					}
+					hasil = String.format("%.2f", c);
+					textField_2.setText(hasil);
+				break;	
+				}
 				default:
 					textField_2.setText("ERROR");
 				}
